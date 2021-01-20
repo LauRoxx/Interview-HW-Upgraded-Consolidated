@@ -1,38 +1,166 @@
 .App {
   text-align: center;
+  background-color: white;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+header {
+  margin: 5px;
+  padding: 5px 35px;
+  background-color: orange;
+  border-radius: 10px;
+  font-size: calc(10px + 2vmin);
+  color: white;
+  font-weight: bolder;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.card {
+  padding: 5px;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+  max-width: 95%;
+  margin: 10px;
+  text-align: center;
+  font-family: arial;
   display: flex;
   flex-direction: column;
+  flex-wrap: wrap;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  flex: 1 1 auto;
+}
+
+.wide {
+  width: 95%;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.card-title {
+  margin: 10px 0px;
+  width: 100%;
+}
+
+.card-subsection {
+  width: 90%;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.code {
+  padding: 0px 10px;
+  text-align: left;
+  white-space: pre;
+  font-size: 10px;
+}
+
+form {
+  border: 1px solid #d6d7da;
+  padding: 0px 30px 30px 30px;
+  border-radius: 5px;
+  box-sizing:border-box;
+  font-family: arial;
+  line-height: 16px;
+  color: #333333;
+  font-size: 14px;
+  background: #ffffff;
+  flex: 0 1 auto;
+}
+
+form label, form input, form textarea {
+  text-align: left;
+  display: block;
+  margin-bottom: 10px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+form label {
+  padding-top: 10px;
+}
+
+form input {
+  padding: 5px;
+  border: solid 1px #BDC7D8;
+}
+
+form button {
+  margin-top: 10px;
+  border-color: #ff671f;
+  background-color: #ff671f;
+  font-weight: bold;
+  color: #ffffff;
+  text-align: center;
+}
+
+form textarea {
+  height: 15em;
+  width: 100%;
+  flex: 3 3 auto;
+}
+
+.errorMsg {
+  color: #cc0000;
+  font-size: 12px;
+  margin-bottom: 12px;
+}
+
+.successMsg {
+  color: #6B8E23;
+  margin-bottom: 10px;
+}
+
+.true {
+  background-color: #99CC99;
+  border-radius: 10px;
+}
+
+.false {
+  background-color: #EF9A9A;
+  border-radius: 10px;
+}
+
+.flip-card {
+  background-color: transparent;
+  width: 400px;
+  height: 450px;
+  perspective: 1000px;
+  flex: 0 1 auto;
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  padding: 15px;
+  box-sizing: border-box;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  overflow-y: auto;
+}
+
+.flip-card-front {
+  background-color: #282c34;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.flip-card-back {
+  background-color: #2980b9;
+  color: white;
+  transform: rotateY(180deg);
 }

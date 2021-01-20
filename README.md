@@ -1,3 +1,23 @@
+# Interview Homework Assignment
+    A few questions and front-end coding projects were assigned during the interview process. I decided to combine all parts into one, semi-cohesive page. Since this was not part of the assigned requirements I did not focus on accessibility so it is currently lacking.
+
+# The Assigned Requirements
+    >Tell me about your proudest professional achievement.  It can be a personal or school project. 
+
+    >Tell me a about a book, blog, article or GitHub repo you read or liked recently, and why you like it and why you should recommend I do the same. 
+
+    >If you were to describe to a 7-year old what Availity does, what would you say? 
+
+    >Coding exercise: You are tasked to write a checker that validates the parentheses of a LISP code.  Write a program (in Java or JavaScript) which takes in a string as an input and returns true if all the parentheses in the string are properly closed and nested.
+
+    >Coding exercise:   For frontend engineer: Healthcare providers request to be part of the Availity system.  Using React framework, create a registration user interface so healthcare providers can electronically join Availity.  The following data points should be collected:
+        >>First and Last Name
+        >>NPI number
+        >>Business Address
+        >>Telephone Number
+        >>Email address
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

@@ -1,23 +1,21 @@
-import logo from './logo.svg';
 import './App.css';
+import LISPchecker from './Components/LISPchecker';
+import Registration from './Components/Registration';
+import QuestionCards from './Components/QuestionCards';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <header><div className="title">Roxanne Young: Availity Dev HW</div></header>
+      <div className = "card wide">
+        <QuestionCards />
+      </div>
+      <div className = "card">
+        <LISPchecker/>
+      </div>
+      <div className = "card">
+        <Registration/>
+      </div>
     </div>
   );
 }
